@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Routes from './Routes';
 import {ApolloProvider} from "@apollo/react-hooks"
 import ApolloClient from "apollo-boost";
 
@@ -11,9 +11,10 @@ const client = new ApolloClient({
 ReactDOM.render(
   <React.StrictMode>
     <ApolloProvider client ={client}>
-    <App />
+    <Routes />
     </ApolloProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
 
+// stopped @1.41
