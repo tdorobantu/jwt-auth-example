@@ -8,6 +8,7 @@ export const Register: React.FC<RouteComponentProps> = ({history}) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [register] = useRegisterMutation();
+  
   return (
     <div className="">
       <form onSubmit={async e => {
